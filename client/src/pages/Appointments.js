@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 import { showLoading, hideLoading } from "../redux/alertsSlice";
 import axios from "axios";
 import { Table } from "antd";
-import { toast } from "react-hot-toast";
+// import { toast } from "react-hot-toast";
 import moment from "moment";
 
 function Appointments() {

@@ -1,12 +1,12 @@
-import { Button, Col, Row, Form, Input, TimePicker, DatePicker } from "antd";
+import { Button, Col, Row, TimePicker, DatePicker } from "antd";
 import React, { useEffect, useState } from "react";
 import Layout from "../components/Layout";
 import { useDispatch, useSelector } from "react-redux";
 import { hideLoading, showLoading } from "../redux/alertsSlice";
 import axios from "axios";
-import { Navigate, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { toast } from "react-hot-toast";
-import MechanicForm from "../components/MechanicForm";
+// import MechanicForm from "../components/MechanicForm";
 import moment from "moment";
 
 function BookAppointment() {

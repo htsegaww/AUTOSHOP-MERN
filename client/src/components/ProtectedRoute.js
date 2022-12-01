@@ -42,6 +42,7 @@ function ProtectedRoute(props) {
       getUser();
     }
   }, [user]);
+
   if (localStorage.getItem("token")) {
     return props.children;
   } else {
