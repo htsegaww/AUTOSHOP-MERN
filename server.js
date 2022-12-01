@@ -20,5 +20,7 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-app.get("/", (req, res) => res.send("Hello, world!"));
+if (port == null || port == "") {
+  port = 3001;
+}
 app.listen(port, () => console.log(`Listening on port ${port}`));
